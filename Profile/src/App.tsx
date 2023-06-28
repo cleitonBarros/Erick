@@ -1,8 +1,5 @@
 function App() {
-  return <>
-  foi
-  
-  </>;
+  return <>foi</>;
 }
 
 export default App;
