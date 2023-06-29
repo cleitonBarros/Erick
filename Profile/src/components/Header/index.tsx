@@ -11,19 +11,19 @@ export function Header() {
           <a href="#">
             <img src={Logo} alt="imagem da logo" />
           </a>
-          {/* <ul>
-          <li>
-            <a href="#">Inicio</a>
-          </li>
-          <li>
-            <a href="#">Serviços</a>
-          </li>
-          <li>
-            <a href="#">Galeria</a>
-          </li>
-        </ul> */}
+          <ul>
+            <li>
+              <a href="#">Inicio</a>
+            </li>
+            <li>
+              <a href="#">Serviços</a>
+            </li>
+            <li>
+              <a href="#">Galeria</a>
+            </li>
+          </ul>
           <Hamburger />
-          {/* <Button title="Entre em contato" variant="primary" /> */}
+          <Button title="Entre em contato" variant="primary" />
         </S.Nav>
       </S.Container>
     </>

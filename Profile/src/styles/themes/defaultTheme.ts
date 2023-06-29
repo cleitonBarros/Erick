@@ -11,18 +11,11 @@ export const defaultTheme = {
     GRAY: "#D9D9D9",
 
     BEIGE: "#E9E2DA"
+  },
+  DEVICE: {
+    mobile: `(min-width: 425px)`,
+    tablet: `(min-width: 768px)`,
+    laptop: `(min-width: 1024px)`,
+    desktop: `(min-width: 1280px)`
   }
-};
-
-const size = {
-  mobile: "425px",
-  tablet: "768px",
-  laptop: "1024px",
-  desktop: "2560px"
-};
-export const device = {
-  mobile: `(min-width: ${size.mobile})`,
-  tablet: `(min-width: ${size.tablet})`,
-  laptop: `(min-width: ${size.laptop})`,
-  desktop: `(min-width: ${size.desktop})`
 };
