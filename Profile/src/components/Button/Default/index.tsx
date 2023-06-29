@@ -9,11 +9,11 @@ export interface ButtonProps extends HTMLAttributes<HTMLAnchorElement> {
 export function Button({ title, variant, ...props }: ButtonProps) {
   return (
     <>
-      <label>
+      <S.Label>
         <S.Container variant={variant} {...props}>
           {title}
         </S.Container>
-      </label>
+      </S.Label>
     </>
   );
 }

@@ -30,23 +30,33 @@ export const Nav = styled.nav`
   }
 
   > ul {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 4rem;
-
-    a {
-      text-decoration: none;
-      font-size: 1rem;
-      font-weight: 700;
-      color: ${({ theme }) => theme.COLORS.WHITE_100};
-    }
+    display: none;
+    opacity: 0;
+    visibility: hidden;
   }
 
   &:has(> #input-checkout:checked) + .menu {
     top: 4.5rem;
     transform: translateY(0);
+  }
+  @media ${({ theme }) => theme.DEVICE.laptop} {
+    height: 6rem;
+    > ul {
+      list-style: none;
+      display: flex;
+      opacity: 1;
+      visibility: visible;
+      align-items: center;
+      justify-content: center;
+      gap: 4rem;
+
+      a {
+        text-decoration: none;
+        font-size: 1rem;
+        font-weight: 700;
+        color: ${({ theme }) => theme.COLORS.WHITE_100};
+      }
+    }
   }
 `;
 

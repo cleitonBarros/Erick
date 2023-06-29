@@ -15,6 +15,10 @@ export const Container = styled.input`
     top: -15px;
     transform: rotate(135deg);
   }
+  @media ${({ theme }) => theme.DEVICE.laptop} {
+    visibility: hidden;
+    opacity: 0;
+  }
 `;
 
 export const Label = styled.label`
@@ -50,5 +54,11 @@ export const Label = styled.label`
   }
   & span:after {
     top: -32px;
+  }
+
+  @media ${({ theme }) => theme.DEVICE.laptop} {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
   }
 `;
