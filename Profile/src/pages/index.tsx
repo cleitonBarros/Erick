@@ -1,3 +1,5 @@
+import { Section } from "../components/HTMLElement/Section/style";
+
 import profilePhoto from "../assets/perfil.png";
 import * as S from "./style";
 
@@ -5,7 +7,7 @@ export function Main() {
   return (
     <>
       <S.Container>
-        <S.Section>
+        <Section>
           <S.Biography>
             <div>
               <img src={profilePhoto} alt="foto de perfil" />
@@ -22,7 +24,7 @@ export function Main() {
               </p>
             </div>
           </S.Biography>
-        </S.Section>
+        </Section>
       </S.Container>
     </>
   );
