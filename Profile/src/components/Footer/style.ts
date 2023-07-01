@@ -7,14 +7,13 @@ export const Container = styled.footer`
   align-items: center;
   background: ${({ theme }) => theme.COLORS.BLACK_200};
 `;
-
 export const Footer = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   gap: 1.5rem;
-  height: 300px;
+  height: 350px;
   width: 80rem;
   max-width: 80rem;
   padding: 0 1.5rem;
@@ -53,6 +52,63 @@ export const Footer = styled.div`
       font-weight: 700;
       &:hover {
         color: ${({ theme }) => theme.COLORS.ORANGE};
+      }
+    }
+  }
+`;
+
+export const Contact = styled.div`
+  width: 100%;
+  background: ${({ theme }) => theme.COLORS.BEIGE};
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const Content = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 450px;
+  width: 100%;
+  max-width: 80rem;
+  padding: 3.75rem 2.5rem;
+
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  div {
+    width: 25rem;
+    max-width: 25rem;
+    height: 21rem;
+  }
+
+  .wpp {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1rem;
+
+    h2 {
+      font-size: 2.2rem;
+      font-weight: 700;
+    }
+  }
+
+  .social {
+    display: flex;
+    align-items: center;
+
+    ul {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      a {
+        svg {
+          fill: ${({ theme }) => theme.COLORS.BLACK_300};
+        }
       }
     }
   }
