@@ -9,7 +9,7 @@ function App() {
     <>
       <Header />
       <Container>
-        <Main></Main>
+        <Main />
       </Container>
       <Footer />
     </>

@@ -6,4 +6,8 @@ export const Container = styled.div`
   align-items: center;
   flex-direction: column;
   padding-top: 4.5rem;
+
+  @media ${({ theme }) => theme.DEVICE.laptop} {
+    padding-top: 6rem;
+  }
 `;
