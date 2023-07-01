@@ -4,7 +4,7 @@ export const defaultTheme = {
     BLACK_300: "#000000",
 
     WHITE_100: "#FFFFFF",
-    WHITE_200: "F9F9F9",
+    WHITE_200: "#F9F9F9",
 
     ORANGE: "#FB8351",
 
@@ -13,6 +13,7 @@ export const defaultTheme = {
     BEIGE: "#E9E2DA"
   },
   DEVICE: {
+    min: `(min-width: 375px)`,
     mobile: `(min-width: 425px)`,
     tablet: `(min-width: 768px)`,
     laptop: `(min-width: 1130px)`,
