@@ -68,11 +68,12 @@ export const Contact = styled.div`
 export const Content = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   min-height: 450px;
   width: 100%;
   max-width: 80rem;
-  padding: 3.75rem 2.5rem;
+  padding: 2.5rem 2rem;
+  gap: 2rem;
 
   display: flex;
   align-items: center;
@@ -81,7 +82,7 @@ export const Content = styled.div`
   div {
     width: 25rem;
     max-width: 25rem;
-    height: 21rem;
+    height: 12rem;
   }
 
   .wpp {
@@ -108,8 +109,22 @@ export const Content = styled.div`
       a {
         svg {
           fill: ${({ theme }) => theme.COLORS.BLACK_300};
+          transition: all 0.5s;
+
+          &:hover {
+            transform: scale(1.2);
+          }
         }
       }
+    }
+  }
+
+  @media ${({ theme }) => theme.DEVICE.laptop} {
+    justify-content: space-between;
+    padding: 3.75rem 2.5rem;
+
+    div {
+      height: 21rem;
     }
   }
 `;

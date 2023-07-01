@@ -2,7 +2,7 @@ import Flag from "../../assets/Emoji.svg";
 import Logo from "../../assets/ErickArt.svg";
 import { Button } from "../Button/Default";
 import * as S from "./style";
-import art from "../../assets/artstation.svg";
+
 import {
   At,
   InstagramLogo,
