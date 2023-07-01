@@ -26,18 +26,14 @@ export default createGlobalStyle`
         filter: brightness(0.9)
     }
 
-    .container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    
     html ::-webkit-scrollbar {
         width: 4px;
     }
+
     html ::-webkit-scrollbar-thumb {
       background: ${({ theme }) => theme.COLORS.ORANGE};
     }
+    
     html ::-webkit-scrollbar-track {
       background: ${({ theme }) => theme.COLORS.BLACK_300};
     }
