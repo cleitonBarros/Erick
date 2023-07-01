@@ -83,3 +83,13 @@ export const Biography = styled.div`
     }
   }
 `;
+
+export const Services = styled.div`
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  @media ${({ theme }) => theme.DEVICE.desktop} {
+    gap: 2rem;
+  }
+`;
