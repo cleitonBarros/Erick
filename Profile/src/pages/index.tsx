@@ -49,6 +49,26 @@ export function Main() {
             />
           </S.Services>
         </Section>
+
+        <Section id="Galeria">
+          <S.gallery>
+            <img src="https://source.unsplash.com/random?flower" alt="" />
+            <img src="https://source.unsplash.com/random?car" alt="" />
+            <img src="https://source.unsplash.com/random?bike" alt="" />
+            <img src="https://source.unsplash.com/random?person" alt="" />
+            <img src="https://source.unsplash.com/random?animal" alt="" />
+            <img src="https://source.unsplash.com/random?life" alt="" />
+            <img src="https://source.unsplash.com/random?sport" alt="" />
+            <img src="https://source.unsplash.com/random?death" alt="" />
+            <img src="https://source.unsplash.com/random?dog" alt="" />
+            <img src="https://source.unsplash.com/random?cat" alt="" />
+            <img src="https://source.unsplash.com/random?game" alt="" />
+            <img src="https://source.unsplash.com/random?men" alt="" />
+            <img src="https://source.unsplash.com/random?word" alt="" />
+            <img src="https://source.unsplash.com/random?state" alt="" />
+            <img src="https://source.unsplash.com/random?love" alt="" />
+          </S.gallery>
+        </Section>
       </S.Container>
     </>
   );

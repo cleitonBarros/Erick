@@ -124,7 +124,7 @@ export const Content = styled.div`
     padding: 3.75rem 2.5rem;
 
     div {
-      height: 21rem;
+      height: 25rem;
     }
   }
 `;

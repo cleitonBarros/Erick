@@ -93,3 +93,29 @@ export const Services = styled.div`
     gap: 2rem;
   }
 `;
+
+export const gallery = styled.div`
+  margin-top: 4rem;
+  column-count: 1;
+  column-gap: 0.875rem;
+
+  img {
+    width: 100%;
+    margin-bottom: 0.875rem;
+    transition: 0.5s;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+  @media ${({ theme }) => theme.DEVICE.min} {
+    column-count: 2;
+  }
+  @media ${({ theme }) => theme.DEVICE.mobile} {
+    column-count: 3;
+  }
+  @media ${({ theme }) => theme.DEVICE.laptop} {
+    column-count: 4;
+    column-gap: 1rem;
+  }
+`;
