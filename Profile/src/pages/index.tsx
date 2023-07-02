@@ -9,7 +9,7 @@ import { Desktop, PaintBrush, ScribbleLoop } from "@phosphor-icons/react";
 export function Main() {
   return (
     <>
-      <S.Container id="Inicio">
+      <S.Container>
         <Section>
           <S.Biography>
             <div>
