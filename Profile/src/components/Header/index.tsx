@@ -8,22 +8,22 @@ export function Header() {
     <>
       <S.Container>
         <S.Nav>
-          <a href="#">
+          <a href="#Inicio">
             <img src={Logo} alt="imagem da logo" />
           </a>
           <ul>
             <li>
-              <a href="#">Inicio</a>
+              <a href="#Inicio">Inicio</a>
             </li>
             <li>
-              <a href="#">Serviços</a>
+              <a href="#Service">Serviços</a>
             </li>
             <li>
-              <a href="#">Galeria</a>
+              <a href="#Galeria">Galeria</a>
             </li>
           </ul>
           <Hamburger />
-          <Button title="Entre em contato" variant="primary" />
+          <Button href="#Contact" title="Entre em contato" variant="primary" />
         </S.Nav>
       </S.Container>
     </>

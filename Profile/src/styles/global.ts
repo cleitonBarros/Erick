@@ -8,6 +8,7 @@ export default createGlobalStyle`
         text-decoration: none;
         list-style: none;
         outline: none;
+        scroll-behavior:smooth;
     }
 
     body{
