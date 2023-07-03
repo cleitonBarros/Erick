@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 
+import { Container } from "../../components/HTMLElement/Container/style";
 import { Section } from "../../components/HTMLElement/Section/style";
 
 import video1 from "../../assets/video/video1.mp4";
@@ -28,7 +29,7 @@ export function Videos() {
   }, []);
 
   return (
-    <>
+    <Container>
       <Section>
         <S.Container>
           <S.Box>
@@ -45,6 +46,6 @@ export function Videos() {
           </S.Box>
         </S.Container>
       </Section>
-    </>
+    </Container>
   );
 }

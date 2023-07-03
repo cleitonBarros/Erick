@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const Section = styled.section`
+  display: flex;
+  flex-direction: column;
   width: 100%;
   max-width: 80rem;
   min-height: 100vh;
@@ -9,6 +11,6 @@ export const Section = styled.section`
   @media ${({ theme }) => theme.DEVICE.laptop} {
     display: flex;
     align-items: center;
-    padding: 3.75rem 2.5rem;
+    padding: 9rem 2.5rem;
   }
 `;

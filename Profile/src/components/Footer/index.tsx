@@ -22,9 +22,11 @@ export function Footer() {
               algum duvida que apareceu
             </p>
             <Button
-              href="https://api.whatsapp.com/send/?phone=5511945638717&text&type=phone_number&app_absent=0"
+              href="https://wa.me/5511945638717?text=Eu%20gostaria%20de%20fazer%20um%20pedido..."
               title="Entrar em contato"
               variant="secondary"
+              target="_blank"
+              rel="noreferrer"
               icon={<WhatsappLogo size={32} />}
             />
           </div>
