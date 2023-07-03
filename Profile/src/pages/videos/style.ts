@@ -13,6 +13,7 @@ export const Box = styled.div`
   width: 100%;
   height: 100vh;
   margin-bottom: 3rem;
+  cursor: pointer;
 
   &:hover {
     filter: grayscale(0);

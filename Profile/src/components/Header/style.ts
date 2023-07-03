@@ -23,6 +23,13 @@ export const Nav = styled.nav`
 
   padding: 0 1.5rem;
 
+  .voltar {
+    cursor: pointer;
+    &:hover {
+      filter: brightness(1.2);
+    }
+  }
+
   img {
     width: 9rem;
     max-width: 100%;
