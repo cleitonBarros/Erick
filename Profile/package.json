@@ -12,6 +12,7 @@
   "dependencies": {
     "@phosphor-icons/react": "^2.0.10",
     "@trendyol-js/react-carousel": "^3.0.2",
+    "aos": "^3.0.0-beta.6",
     "graphql-hooks": "^6.2.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
