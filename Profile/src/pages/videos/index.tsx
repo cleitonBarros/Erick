@@ -9,6 +9,17 @@ import video3 from "../../assets/video/video3.mp4";
 import video4 from "../../assets/video/video4.mp4";
 import * as S from "./style";
 
+import { useQuery } from "graphql-hooks";
+
+const HOMEPAGE_QUERY = `query {
+    allAssets {
+      id
+      name
+      image{
+        url(imgixParams: {fm: jpg, fit:crop, w: 300 ,h:300 })
+      }
+  }`;
+
 export function Videos() {
   useEffect(() => {
     const clips = document?.querySelectorAll("video");
@@ -27,6 +38,11 @@ export function Videos() {
       }
     }
   }, []);
+  const { data } = useQuery(HOMEPAGE_QUERY, {
+    variables: {
+      limit: 10
+    }
+  });
 
   return (
     <Container>
