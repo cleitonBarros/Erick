@@ -30,6 +30,11 @@ export const Nav = styled.nav`
     }
   }
 
+  > label:has(a) {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+  }
   img {
     width: 9rem;
     max-width: 100%;
@@ -48,6 +53,11 @@ export const Nav = styled.nav`
   }
   @media ${({ theme }) => theme.DEVICE.laptop} {
     height: 6rem;
+    > label:has(a) {
+      display: block;
+      visibility: visible;
+      opacity: 1;
+    }
     > ul {
       list-style: none;
       display: flex;
@@ -74,7 +84,6 @@ export const Mobile = styled.nav`
   width: 100vw;
   background-color: red;
   transform: translateY(-500px);
-
   ul {
     display: flex;
     flex-direction: column;

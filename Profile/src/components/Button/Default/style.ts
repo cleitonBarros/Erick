@@ -22,14 +22,4 @@ export const Container = styled.a<ContainerProps>`
   align-items: center;
   gap: 1rem;
 `;
-export const Label = styled.label`
-  display: none;
-  visibility: hidden;
-  opacity: 0;
-
-  @media ${({ theme }) => theme.DEVICE.laptop} {
-    display: block;
-    visibility: visible;
-    opacity: 1;
-  }
-`;
+export const Label = styled.label``;

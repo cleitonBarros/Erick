@@ -50,10 +50,10 @@ export const Label = styled.label`
   }
 
   & span:before {
-    top: -23px;
+    top: -25px;
   }
   & span:after {
-    top: -32px;
+    top: -30px;
   }
 
   @media ${({ theme }) => theme.DEVICE.laptop} {

@@ -15,7 +15,7 @@ export function Header() {
           {path === "videos" ? (
             <>
               <a href="/">
-                <CaretCircleLeft className="voltar" color="#FB8351" size={72} />
+                <CaretCircleLeft className="voltar" color="#FB8351" size={48} />
               </a>
               <a href="#">
                 <img src={Logo} alt="imagem da logo" />
