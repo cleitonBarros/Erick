@@ -1,3 +1,4 @@
+import { Button } from "../../components/Button/Default";
 import { Card } from "../../components/Card";
 import { Container } from "../../components/HTMLElement/Container/style";
 import { Section } from "../../components/HTMLElement/Section/style";
@@ -7,7 +8,6 @@ import profilePhoto from "../../assets/perfil.jpg";
 import * as S from "./style";
 
 import { Desktop, PaintBrush, ScribbleLoop } from "@phosphor-icons/react";
-import { Button } from "../../components/Button/Default";
 
 export function Home() {
   return (
