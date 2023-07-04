@@ -66,7 +66,8 @@ export const Nav = styled.nav`
       align-items: center;
       justify-content: center;
       gap: 4rem;
-
+      margin: 0;
+      padding: 0;
       a {
         text-decoration: none;
         font-size: 1rem;
