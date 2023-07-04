@@ -85,6 +85,7 @@ export const Biography = styled.div`
 `;
 
 export const Services = styled.div`
+  padding-top: 4rem;
   display: flex;
   align-items: center;
   flex-wrap: wrap;

@@ -78,28 +78,4 @@ export const Nav = styled.nav`
   }
 `;
 
-export const Mobile = styled.nav`
-  position: absolute;
-  top: 4.5rem;
-  left: 0;
-  width: 100vw;
-  background-color: red;
-  transform: translateY(-500px);
-  ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    li {
-      padding: 2rem 2.5rem;
-
-      a {
-        text-decoration: none;
-        font-size: 1rem;
-        font-weight: 700;
-        color: ${({ theme }) => theme.COLORS.WHITE_100};
-      }
-    }
-  }
-`;
+export const Mobile = styled.nav``;

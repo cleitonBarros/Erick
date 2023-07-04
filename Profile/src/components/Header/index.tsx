@@ -44,6 +44,7 @@ export function Header() {
           <Button href="#Contact" title="Entre em contato" variant="primary" />
         </S.Nav>
       </S.Container>
+      <S.Mobile></S.Mobile>
     </>
   );
 }
