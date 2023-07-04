@@ -10,3 +10,33 @@ export const client = new GraphQLClient({
     "X-Include-Drafts": "true"
   }
 });
+
+export const ASSETS_QUERY = `query {
+  allAssets {
+    id
+    name
+    image{
+      url(imgixParams: {fm: jpg, fit:crop, w: 300 ,h:300 })
+    }
+}`;
+
+export const PERFIL_QUERY = `query{
+  allPerfils{
+    id
+    name
+    perfil{
+      url
+    }
+    
+  }
+}`;
+
+export const VIDEO_QUERY = `query{
+  allVideos{
+    id
+    film{
+      url
+    }
+  }
+
+}`;

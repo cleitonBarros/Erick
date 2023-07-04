@@ -7,20 +7,14 @@ import video1 from "../../assets/video/video1.mp4";
 import video2 from "../../assets/video/video2.mp4";
 import video3 from "../../assets/video/video3.mp4";
 import video4 from "../../assets/video/video4.mp4";
+import startAos from "../../lib/Aos";
+import { ASSETS_QUERY } from "../../lib/dato-cms/dato-cms";
 import * as S from "./style";
 
 import { useQuery } from "graphql-hooks";
 
-const HOMEPAGE_QUERY = `query {
-    allAssets {
-      id
-      name
-      image{
-        url(imgixParams: {fm: jpg, fit:crop, w: 300 ,h:300 })
-      }
-  }`;
-
 export function Videos() {
+  startAos();
   useEffect(() => {
     const clips = document?.querySelectorAll("video");
 
@@ -38,7 +32,7 @@ export function Videos() {
       }
     }
   }, []);
-  const { data } = useQuery(HOMEPAGE_QUERY, {
+  const { data } = useQuery(ASSETS_QUERY, {
     variables: {
       limit: 10
     }
@@ -49,16 +43,36 @@ export function Videos() {
       <Section>
         <S.Container>
           <S.Box>
-            <video src={video1} loop></video>
+            <video
+              src={video1}
+              data-aos="flip-left"
+              data-aos-delay="500"
+              loop
+            ></video>
           </S.Box>
           <S.Box>
-            <video src={video2} loop></video>
+            <video
+              src={video2}
+              data-aos="flip-right"
+              data-aos-delay="500"
+              loop
+            ></video>
           </S.Box>
           <S.Box>
-            <video src={video3} loop></video>
+            <video
+              src={video3}
+              data-aos="flip-left"
+              data-aos-delay="500"
+              loop
+            ></video>
           </S.Box>
           <S.Box>
-            <video src={video4} loop></video>
+            <video
+              src={video4}
+              data-aos="flip-right"
+              data-aos-delay="500"
+              loop
+            ></video>
           </S.Box>
         </S.Container>
       </Section>
