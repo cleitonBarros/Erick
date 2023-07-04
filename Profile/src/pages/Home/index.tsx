@@ -25,13 +25,18 @@ export function Home() {
               <div data-aos="fade-up" data-aos-delay="400">
                 <h2>Sobre mim</h2>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
-                  consequuntur nobis voluptatum ea dolores incidunt.
+                  Me chamo Erick, tenho 28 anos e sou de Osasco, SP. Sou
+                  apaixonado por arte, fascinado por ilustrações, desenhos e
+                  designer. Comecei a desenhar muito novo e de lá para cá
+                  nãoparei mais.
                 </p>
                 <p>
-                  Suscipit vitae soluta, tempore voluptate ipsam placeat
-                  voluptatibus nobis nam modi, beatae reiciendis repellat natus!
+                  Grande parte de meus desenhos fazem a moda antiga, a mão,
+                  lápis, lápis de cor, marcadores e tudo que puder adicionar,
+                  mas também faço ilustrações digitais, pinturas, é o que eu
+                  utilizo é tinta guache.
                 </p>
+                <p>Minha especialidade são os animais.</p>
               </div>
               <div data-aos="fade-up" data-aos-delay="300">
                 <img src={profilePhoto} alt="foto de perfil" />
