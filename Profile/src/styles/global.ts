@@ -16,6 +16,7 @@ export default createGlobalStyle`
         color: ${({ theme }) => theme.COLORS.BLACK_300};
         font-family: 'Poppins', sans-serif;
         -webkit-font-smoothing: antialiased;
+        overflow-x: hidden;
     }
 
     button, a{
