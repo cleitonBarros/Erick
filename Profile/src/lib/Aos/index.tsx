@@ -7,6 +7,5 @@ function startAos() {
     easing: "ease-in-out"
   });
 }
-const AosRefresh = () => Aos.refreshHard();
 
 export default startAos;
