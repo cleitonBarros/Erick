@@ -24,7 +24,7 @@ export function Home() {
         <S.Container>
           <Section id="Bio">
             <S.Biography>
-              <div data-aos="fade-up" data-aos-delay="400">
+              <div data-aos="fade-up">
                 <h2>Sobre mim</h2>
                 <p>
                   Me chamo Erick, tenho 28 anos e sou de Osasco, SP. Sou
