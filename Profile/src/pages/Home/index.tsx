@@ -23,7 +23,7 @@ export function Home() {
       <Container>
         <S.Container>
           <Section id="Bio">
-            <S.Biography>
+            <S.Biography data-aos="fade-up" data-aos-delay="100">
               <div>
                 <h2>Sobre mim</h2>
                 <p>
@@ -40,7 +40,7 @@ export function Home() {
                 </p>
                 <p>Minha especialidade são os animais.</p>
               </div>
-              <div >
+              <div>
                 <img src={profilePhoto} alt="foto de perfil" />
               </div>
             </S.Biography>
