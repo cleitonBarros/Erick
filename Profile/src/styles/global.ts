@@ -12,7 +12,7 @@ export default createGlobalStyle`
     }
 
     body{
-        background: ${({ theme }) => theme.COLORS.WHITE_100};
+        background: ${({ theme }) => theme.COLORS.WHITE_200};
         color: ${({ theme }) => theme.COLORS.BLACK_300};
         font-family: 'Poppins', sans-serif;
         -webkit-font-smoothing: antialiased;
