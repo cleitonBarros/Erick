@@ -6,6 +6,10 @@ export const Container = styled.div`
   width: 100%;
   min-height: 100vh;
   margin-top: 2.5rem;
+  @media ${({ theme }) => theme.DEVICE.tablet} {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 `;
 export const Box = styled.div`
   position: relative;
@@ -27,24 +31,19 @@ export const Box = styled.div`
     height: 100%;
     object-fit: cover;
   }
-  @media ${({ theme }) => theme.DEVICE.min} {
-    video {
-      padding: 2rem;
-    }
-  }
   @media ${({ theme }) => theme.DEVICE.mobile} {
     height: 100vh;
 
     video {
-      padding: 4rem;
+      padding: 2rem;
     }
   }
   @media ${({ theme }) => theme.DEVICE.laptop} {
+    width: 50%;
     margin-bottom: 0;
-    height: 100vh;
 
     video {
-      padding: 6rem;
+      padding: 1rem 0;
     }
   }
 `;

@@ -4,8 +4,9 @@ import { Container } from "../../components/HTMLElement/Container/style";
 import { Section } from "../../components/HTMLElement/Section/style";
 import { Slider } from "../../components/Slider";
 
-import profilePhoto from "../../assets/perfil.jpg";
+import profilePhoto from "../../assets/picture/gallery/perfil.jpg";
 import startAos from "../../lib/Aos";
+import { Photos } from "../../utils";
 import * as S from "./style";
 
 import { Desktop, PaintBrush, ScribbleLoop } from "@phosphor-icons/react";
@@ -15,7 +16,6 @@ window.onload = () => {
 };
 
 startAos();
-
 export function Home() {
   return (
     <>
@@ -69,96 +69,17 @@ export function Home() {
 
           <Section id="Galeria">
             <S.gallery>
-              <img
-                data-aos="fade-up"
-                data-aos-delay="100"
-                src="https://source.unsplash.com/random?flower"
-                alt=""
-              />
-              <img
-                data-aos="fade-up"
-                data-aos-delay="200"
-                src="https://source.unsplash.com/random?car"
-                alt=""
-              />
-              <img
-                data-aos="fade-up"
-                data-aos-delay="300"
-                src="https://source.unsplash.com/random?bike"
-                alt=""
-              />
-              <img
-                data-aos="fade-up"
-                data-aos-delay="400"
-                src="https://source.unsplash.com/random?person"
-                alt=""
-              />
-              <img
-                data-aos="fade-up"
-                data-aos-delay="500"
-                src="https://source.unsplash.com/random?animal"
-                alt=""
-              />
-              <img
-                data-aos="fade-up"
-                data-aos-delay="400"
-                src="https://source.unsplash.com/random?life"
-                alt=""
-              />
-              <img
-                data-aos="fade-up"
-                data-aos-delay="300"
-                src="https://source.unsplash.com/random?sport"
-                alt=""
-              />
-              <img
-                data-aos="fade-up"
-                data-aos-delay="200"
-                src="https://source.unsplash.com/random?death"
-                alt=""
-              />
-              <img
-                data-aos="fade-up"
-                data-aos-delay="700"
-                src="https://source.unsplash.com/random?dog"
-                alt=""
-              />
-              <img
-                data-aos="fade-up"
-                data-aos-delay="500"
-                src="https://source.unsplash.com/random?cat"
-                alt=""
-              />
-              <img
-                data-aos="fade-up"
-                data-aos-delay="500"
-                src="https://source.unsplash.com/random?game"
-                alt=""
-              />
-              <img
-                data-aos="fade-up"
-                data-aos-delay="700"
-                src="https://source.unsplash.com/random?men"
-                alt=""
-              />
-              <img
-                data-aos="fade-up"
-                data-aos-delay="500"
-                src="https://source.unsplash.com/random?word"
-                alt=""
-              />
-              <img
-                data-aos="fade-up"
-                data-aos-delay="500"
-                src="https://source.unsplash.com/random?state"
-                alt=""
-              />
-              <img
-                data-aos="fade-up"
-                data-aos-delay="400"
-                src="https://source.unsplash.com/random?love"
-                alt=""
-              />
+              {Photos.map((photo) => {
+                return (
+                  <img
+                    key={photo.id}
+                    data-aos="fade-up"
+                    data-aos-delay="300"
+                    src={photo.src}
+                    alt={photo.alt}
+                  />
+                );
+              })}
             </S.gallery>
             <Button href="/videos" variant="primary" title="Ver mais" />
           </Section>

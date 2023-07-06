@@ -3,11 +3,8 @@ import { useEffect } from "react";
 import { Container } from "../../components/HTMLElement/Container/style";
 import { Section } from "../../components/HTMLElement/Section/style";
 
-import video1 from "../../assets/video/video1.mp4";
-import video2 from "../../assets/video/video2.mp4";
-import video3 from "../../assets/video/video3.mp4";
-import video4 from "../../assets/video/video4.mp4";
 import startAos from "../../lib/Aos";
+import { videos } from "../../utils";
 import * as S from "./style";
 
 export function Videos() {
@@ -34,38 +31,19 @@ export function Videos() {
     <Container>
       <Section>
         <S.Container>
-          <S.Box>
-            <video
-              src={video1}
-              data-aos="flip-left"
-              data-aos-delay="500"
-              loop
-            ></video>
-          </S.Box>
-          <S.Box>
-            <video
-              src={video2}
-              data-aos="flip-right"
-              data-aos-delay="500"
-              loop
-            ></video>
-          </S.Box>
-          <S.Box>
-            <video
-              src={video3}
-              data-aos="flip-left"
-              data-aos-delay="500"
-              loop
-            ></video>
-          </S.Box>
-          <S.Box>
-            <video
-              src={video4}
-              data-aos="flip-right"
-              data-aos-delay="500"
-              loop
-            ></video>
-          </S.Box>
+          {videos.map((video, index) => {
+            return (
+              <S.Box key={index}>
+                <video
+                  src={video.src}
+                  data-aos="flip-left"
+                  data-aos-delay="500"
+                  loop
+                  muted
+                ></video>
+              </S.Box>
+            );
+          })}
         </S.Container>
       </Section>
     </Container>
