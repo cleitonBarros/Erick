@@ -8,10 +8,7 @@ import video2 from "../../assets/video/video2.mp4";
 import video3 from "../../assets/video/video3.mp4";
 import video4 from "../../assets/video/video4.mp4";
 import startAos from "../../lib/Aos";
-import { ASSETS_QUERY } from "../../lib/dato-cms/dato-cms";
 import * as S from "./style";
-
-import { useQuery } from "graphql-hooks";
 
 export function Videos() {
   startAos();
@@ -32,11 +29,6 @@ export function Videos() {
       }
     }
   }, []);
-  const { data } = useQuery(ASSETS_QUERY, {
-    variables: {
-      limit: 10
-    }
-  });
 
   return (
     <Container>
