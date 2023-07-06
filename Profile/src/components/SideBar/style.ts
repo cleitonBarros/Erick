@@ -8,8 +8,8 @@ export const Container = styled.div`
   min-height: 100vh;
   top: 0px;
   left: 0px;
-  width: 100vw;
-  transform: translateX(-250px);
+  width: 100%;
+  transform: translateY(-100%);
   transition: transform 0.8s ease;
   display: flex;
   justify-content: center;
@@ -17,20 +17,12 @@ export const Container = styled.div`
   z-index: 100;
 
   &.show {
-    transform: translateX(0);
+    transform: translateY(0);
   }
   &.hidden {
-    transform: translateX(-250px);
+    transform: translateY(100%);
   }
-  @media ${({ theme }) => theme.DEVICE.tablet} {
-    width: 300px;
-  }
-  &.show {
-    transform: translateX(0);
-  }
-  &.hidden {
-    transform: translateX(-300px);
-  }
+
   @media ${({ theme }) => theme.DEVICE.laptop} {
     display: none;
     visibility: hidDen;
@@ -47,13 +39,15 @@ export const Content = styled.div`
   justify-content: center;
   flex-direction: column;
   width: 100%;
-  height: 100%;
-  gap: 4rem;
+  height: 100vh;
+  gap: 2rem;
 
   ul {
+    height: 300px;
     padding: 0;
     margin: 0;
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
     li {
       margin-bottom: 10px;
@@ -76,8 +70,5 @@ export const Content = styled.div`
     }
   }
   @media ${({ theme }) => theme.DEVICE.tablet} {
-    ul {
-      height: 50%;
-    }
   }
 `;
