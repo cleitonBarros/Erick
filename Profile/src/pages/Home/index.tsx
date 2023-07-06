@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import { Button } from "../../components/Button/Default";
 import { Card } from "../../components/Card";
 import { Container } from "../../components/HTMLElement/Container/style";
@@ -17,6 +18,7 @@ window.onload = () => {
 
 startAos();
 export function Home() {
+  const navigate = useNavigate();
   return (
     <>
       <Slider />
@@ -81,7 +83,13 @@ export function Home() {
                 );
               })}
             </S.gallery>
-            <Button href="/videos" variant="primary" title="Ver mais" />
+            <Button
+              onClick={() => {
+                navigate("/videos");
+              }}
+              variant="primary"
+              title="Ver mais"
+            />
           </Section>
         </S.Container>
       </Container>
