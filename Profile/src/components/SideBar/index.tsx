@@ -16,6 +16,7 @@ export function SideBar({ className }: propsSideBar) {
 
   function hadleClick() {
     const container = document?.querySelector(".show");
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const chk: any = document?.getElementById("input-checkout");
     if (container?.classList.contains("show")) {
       container.classList.replace("show", "hidden");

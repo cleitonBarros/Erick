@@ -1,4 +1,5 @@
-import { useContext, useState } from "react";
+/* eslint-disable @typescript-eslint/no-explicit-any */
+import { useContext } from "react";
 
 import Logo from "../../assets/ErickArt.svg";
 import { ThemeContext } from "../../context/useContext";

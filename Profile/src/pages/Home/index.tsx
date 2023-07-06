@@ -1,5 +1,3 @@
-import { useEffect } from "react";
-
 import { Button } from "../../components/Button/Default";
 import { Card } from "../../components/Card";
 import { Container } from "../../components/HTMLElement/Container/style";
