@@ -69,10 +69,10 @@ export const Content = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 450px;
+  min-height: 50vh;
   width: 100%;
   max-width: 80rem;
-  padding: 2.5rem 2rem;
+  padding: 2.5rem;
   gap: 2rem;
 
   display: flex;

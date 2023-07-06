@@ -96,6 +96,7 @@ export const Services = styled.div`
 `;
 
 export const gallery = styled.div`
+  margin-top: 3rem;
   column-count: 1;
   column-gap: 0.875rem;
 
