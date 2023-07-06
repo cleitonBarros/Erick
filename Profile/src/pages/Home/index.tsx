@@ -83,13 +83,13 @@ export function Home() {
                 );
               })}
             </S.gallery>
-            <Button
+            {/* <Button
               onClick={() => {
-                navigate("/videos");
+                navigate("");
               }}
               variant="primary"
               title="Ver mais"
-            />
+            /> */}
           </Section>
         </S.Container>
       </Container>
