@@ -6,7 +6,6 @@ export const Section = styled.section`
   justify-content: center;
   width: 100%;
   max-width: 80rem;
-  min-height: 100vh;
   padding: 2.5rem 1.5rem;
 
   @media ${({ theme }) => theme.DEVICE.laptop} {
