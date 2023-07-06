@@ -1,5 +1,5 @@
-import { useNavigate } from "react-router-dom";
-import { Button } from "../../components/Button/Default";
+//import { useNavigate } from "react-router-dom";
+//import { Button } from "../../components/Button/Default";
 import { Card } from "../../components/Card";
 import { Container } from "../../components/HTMLElement/Container/style";
 import { Section } from "../../components/HTMLElement/Section/style";
@@ -18,7 +18,6 @@ window.onload = () => {
 
 startAos();
 export function Home() {
-  const navigate = useNavigate();
   return (
     <>
       <Slider />

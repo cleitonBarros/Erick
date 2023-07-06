@@ -8,7 +8,7 @@ export const Container = styled.div`
   min-height: 100vh;
   top: 0px;
   left: 0px;
-  width: 250px;
+  width: 100vw;
   transform: translateX(-250px);
   transition: transform 0.8s ease;
   display: flex;
