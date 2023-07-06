@@ -1,6 +1,5 @@
 import Flag from "../../assets/Emoji.svg";
 import Logo from "../../assets/ErickArt.svg";
-import ScrollIntoView from "../../hooks/useScroll";
 import { Button } from "../Button/Default";
 import * as S from "./style";
 
@@ -13,7 +12,7 @@ import {
 
 export function Footer() {
   return (
-    <ScrollIntoView>
+    <>
       <S.Contact id="Contact">
         <S.Content>
           <div className="wpp">
@@ -79,6 +78,6 @@ export function Footer() {
           </span>
         </S.Footer>
       </S.Container>
-    </ScrollIntoView>
+    </>
   );
 }

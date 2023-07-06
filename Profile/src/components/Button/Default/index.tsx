@@ -15,12 +15,19 @@ export function Button({
   icon,
   title,
   variant,
+  onClick,
   ...props
 }: ButtonProps) {
   return (
     <>
       <S.Label>
-        <S.Container target={target} href={href} variant={variant} {...props}>
+        <S.Container
+          onClick={onClick}
+          target={target}
+          href={href}
+          variant={variant}
+          {...props}
+        >
           {icon} {title}
         </S.Container>
       </S.Label>

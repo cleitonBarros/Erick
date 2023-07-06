@@ -106,6 +106,9 @@ export const Content = styled.div`
       width: 100%;
       display: flex;
       justify-content: space-between;
+
+      padding: 0;
+      margin: 0;
       a {
         svg {
           fill: ${({ theme }) => theme.COLORS.BLACK_300};

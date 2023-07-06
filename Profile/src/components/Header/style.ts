@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+export const Pai = styled.div`
+  position: relative;
+`;
+
 export const Container = styled.header`
   position: fixed;
   top: 0;
@@ -9,7 +13,7 @@ export const Container = styled.header`
   justify-content: center;
 
   background: ${({ theme }) => theme.COLORS.BLACK_200};
-  z-index: +9999;
+  z-index: 300;
 `;
 
 export const Nav = styled.nav`
@@ -22,7 +26,7 @@ export const Nav = styled.nav`
   justify-content: space-between;
 
   padding: 0 1.5rem;
-
+  z-index: 300;
   .voltar {
     cursor: pointer;
     &:hover {
