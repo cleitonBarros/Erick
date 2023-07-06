@@ -40,7 +40,7 @@ export function Home() {
                 </p>
                 <p>Minha especialidade são os animais.</p>
               </div>
-              <div data-aos="fade-up" data-aos-delay="300">
+              <div >
                 <img src={profilePhoto} alt="foto de perfil" />
               </div>
             </S.Biography>
