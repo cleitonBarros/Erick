@@ -24,7 +24,7 @@ export function Home() {
       <Container>
         <S.Container>
           <Section id="Bio">
-            <S.Biography data-aos="fade-up">
+            <S.Biography>
               <div>
                 <h2>Sobre mim</h2>
                 <p>
@@ -48,7 +48,7 @@ export function Home() {
           </Section>
 
           <Section id="Service">
-            <S.Services data-aos="fade-up">
+            <S.Services>
               <Card
                 icon={<ScribbleLoop size={130} />}
                 title="Á mão"
@@ -71,15 +71,7 @@ export function Home() {
           <Section id="Galeria">
             <S.gallery>
               {Photos.map((photo) => {
-                return (
-                  <img
-                    key={photo.id}
-                    data-aos="flip-left"
-                    data-aos-delay="300"
-                    src={photo.src}
-                    alt={photo.alt}
-                  />
-                );
+                return <img key={photo.id} src={photo.src} alt={photo.alt} />;
               })}
             </S.gallery>
             {/* <Button
