@@ -68,121 +68,145 @@ export const Slide = [
 
 export const Photos = [
   {
+    type: "image",
     id: 1,
     src: cat1,
     alt: "ilustrção de um gato "
   },
   {
+    type: "image",
     id: 3,
     src: eye1,
     alt: "ilustrção de um olho com fundo roxo "
   },
   {
+    type: "image",
     id: 8,
     src: gambit,
     alt: "ilustrção da personagem da serie o gambito da rainha "
   },
   {
+    type: "image",
     id: 25,
     src: cat3,
     alt: "ilustrção de um gato "
   },
   {
+    type: "image",
     id: 2,
     src: dog1,
     alt: "ilustrção de um cão "
   },
   {
+    type: "image",
     id: 4,
     src: eye2,
     alt: "ilustrção de um olho com fundo rosado "
   },
   {
+    type: "image",
     id: 17,
     src: senna2,
     alt: "Ilustração da senna, uma personagem do jogo league of legends, mulher negra de capuz"
   },
   {
+    type: "image",
     id: 6,
     src: eye4,
     alt: "ilustrção de um olho com fundo azul "
   },
   {
+    type: "image",
     id: 15,
     src: queen2,
     alt: "ilustração de uma mulher branca e loira"
   },
   {
+    type: "image",
     id: 7,
     src: eye5,
     alt: "ilustrção de um olho verde "
   },
   {
+    type: "image",
     id: 10,
     src: forest2,
     alt: "ilustrção de um floresta radiante, iluminada pelos raios do sol "
   },
   {
+    type: "image",
     id: 11,
     src: leblanc1,
     alt: "ilustrção da lembranca, personagem do jogo league of legends "
   },
   {
+    type: "image",
     id: 22,
     src: wolf3,
     alt: "ilustração de um lobos preto"
   },
   {
+    type: "image",
     id: 12,
     src: leblanc2,
     alt: "ilustrção da lembranca, personagem do jogo league of legends "
   },
   {
+    type: "image",
     id: 24,
     src: night1,
     alt: "ilustrção de uma floresta de noite estrelada "
   },
   {
+    type: "image",
     id: 13,
     src: night2,
     alt: "ilustrção de uma floresta de noite estrelada "
   },
   {
+    type: "image",
     id: 5,
     src: eye3,
     alt: "ilustrção de um olho com fundo alaranjado "
   },
   {
+    type: "image",
     id: 16,
     src: senna1,
     alt: "Ilustração da senna, uma personagem do jogo league of legends, mulher negra de capuz"
   },
   {
+    type: "image",
     id: 18,
     src: tutty,
     alt: "ilustração um cachorro feliz"
   },
   {
+    type: "image",
     id: 19,
     src: cat2,
     alt: "ilustrção de um gato "
   },
   {
+    type: "image",
     id: 20,
     src: wolf1,
     alt: "ilustração de um lobos mostrando os dentes"
   },
   {
+    type: "image",
     id: 21,
     src: wolf2,
     alt: "ilustração de um lobos preto"
   },
   {
+    type: "image",
     id: 23,
     src: woman,
     alt: "ilustração de uma mulher asiatica"
   },
   {
+    type: "image",
     id: 9,
     src: forest1,
     alt: "ilustrção de um floresta radiante, iluminada pelos raios do sol "
@@ -191,33 +215,43 @@ export const Photos = [
 
 export const videos = [
   {
+    type: "video",
     src: video1
   },
   {
+    type: "video",
     src: video2
   },
   {
+    type: "video",
     src: video3
   },
   {
+    type: "video",
     src: video4
   },
   {
+    type: "video",
     src: video5
   },
   {
+    type: "video",
     src: video6
   },
   {
+    type: "video",
     src: video7
   },
   {
+    type: "video",
     src: video8
   },
   {
+    type: "video",
     src: video9
   },
   {
+    type: "video",
     src: video10
   }
 ];

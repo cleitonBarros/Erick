@@ -1,5 +1,7 @@
 //import { useNavigate } from "react-router-dom";
 //import { Button } from "../../components/Button/Default";
+import { useState } from "react";
+
 import { Card } from "../../components/Card";
 import { Container } from "../../components/HTMLElement/Container/style";
 import { Section } from "../../components/HTMLElement/Section/style";
@@ -17,7 +19,22 @@ window.onload = () => {
 };
 
 startAos();
+
+interface TPhoto {
+  type: string;
+  id: number;
+  src: string;
+  alt: string;
+  cond?: boolean;
+}
+
 export function Home() {
+  const [file, setFile] = useState<TPhoto | null>(null);
+
+  function closeModal() {
+    setFile(null);
+  }
+
   return (
     <>
       <Slider />
@@ -71,9 +88,26 @@ export function Home() {
           <Section id="Galeria">
             <S.gallery>
               {Photos.map((photo) => {
-                return <img key={photo.id} src={photo.src} alt={photo.alt} />;
+                return (
+                  <div key={photo.id}>
+                    <img
+                      src={photo.src}
+                      alt={photo.alt}
+                      onClick={() => setFile(photo)}
+                    />
+                  </div>
+                );
               })}
             </S.gallery>
+            <S.PopUp
+              onClick={closeModal}
+              style={{ display: file ? "block" : "none" }}
+            >
+              <div>
+                <span onClick={closeModal}>&times;</span>
+                <img src={file?.src} alt={file?.alt} />
+              </div>
+            </S.PopUp>
             {/* <Button
               onClick={() => {
                 navigate("");

@@ -50,6 +50,7 @@ export const Footer = styled.div`
     a {
       color: ${({ theme }) => theme.COLORS.WHITE_100};
       font-weight: 700;
+      text-decoration: none;
       &:hover {
         color: ${({ theme }) => theme.COLORS.ORANGE};
       }
