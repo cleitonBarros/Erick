@@ -47,16 +47,15 @@ export function Home() {
                 <p>
                   Me chamo Erick, tenho 28 anos e sou de Osasco, SP. Sou
                   apaixonado por arte, fascinado por ilustrações, desenhos e
-                  designer. Comecei a desenhar muito novo e de lá para cá
-                  nãoparei mais.
+                  designer. Comecei a desenhar muito novo e de lá para cá não
+                  parei mais.
                 </p>
                 <p>
-                  Grande parte de meus desenhos fazem a moda antiga, a mão,
+                  Grande parte de meus desenhos são feito a moda antiga, a mão,
                   lápis, lápis de cor, marcadores e tudo que puder adicionar,
-                  mas também faço ilustrações digitais, pinturas, é o que eu
-                  utilizo é tinta guache.
+                  mas também faço ilustrações digitais, pinturas.
                 </p>
-                <p>Minha especialidade são os animais.</p>
+                <p>Minha especialidade é a ilustraçôes de animais.</p>
               </div>
               <div>
                 <img src={profilePhoto} alt="foto de perfil" />
