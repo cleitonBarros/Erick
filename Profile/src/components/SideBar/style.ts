@@ -39,7 +39,7 @@ export const Content = styled.div`
   justify-content: center;
   flex-direction: column;
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   gap: 2rem;
 
   ul {
@@ -50,22 +50,31 @@ export const Content = styled.div`
     justify-content: space-between;
     flex-direction: column;
     li {
-      margin-bottom: 10px;
-      padding: 0.5rem 2rem;
-      border: 3px solid white;
-      text-align: center;
-      border-radius: 10px;
       transition: 0.5s;
       cursor: pointer;
-      &:hover {
-        transform: scale(1.2);
-      }
 
       a {
         text-decoration: none;
-        font-weight: 600;
-        font-size: 1.4rem;
+        font-weight: bold;
+        font-size: clamp(1.2rem, 1.6rem, 2rem);
         color: white;
+        position: relative;
+
+        &:after {
+          position: absolute;
+          content: "";
+          display: block;
+          border-radius: 10px;
+          width: 0;
+          bottom: -5px;
+          height: 6px;
+          background-color: ${({ theme }) => theme.COLORS.ORANGE};
+          transition: width 0.2s ease-in;
+        }
+        &.active:hover:after,
+        &:hover:after {
+          width: 100%;
+        }
       }
     }
   }
