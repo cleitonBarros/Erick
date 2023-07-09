@@ -9,7 +9,6 @@ interface propsSideBar {
 }
 
 export function SideBar({ className }: propsSideBar) {
-  const path = window.location.pathname.split("/")[1];
   const UseContext = useContext(ThemeContext);
   const [width] = UseWindowSize();
 
@@ -38,18 +37,16 @@ export function SideBar({ className }: propsSideBar) {
         <S.Content>
           <ul>
             <li onClick={hadleClick}>
-              <a href={path === "videos" ? "/" : "#Inicio"}>Inicio</a>
+              <a href={"#Inicio"}>Inicio</a>
             </li>
             <li onClick={hadleClick}>
-              <a href={path === "videos" ? "/" : "#Service"}>Serviços</a>
+              <a href={"#Service"}>Serviços</a>
             </li>
             <li onClick={hadleClick}>
-              <a href={path === "videos" ? "/" : "#Galeria"}>Galeria</a>
+              <a href={"#Galeria"}>Galeria</a>
             </li>
             <li onClick={hadleClick}>
-              <a href={path === "videos" ? "/" : "#Contact"}>
-                Entre em contato
-              </a>
+              <a href={"#Contact"}>Entre em contato</a>
             </li>
           </ul>
         </S.Content>

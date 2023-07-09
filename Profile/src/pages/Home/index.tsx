@@ -1,5 +1,3 @@
-//import { useNavigate } from "react-router-dom";
-//import { Button } from "../../components/Button/Default";
 import { useState } from "react";
 
 import { Card } from "../../components/Card";
@@ -79,7 +77,7 @@ export function Home() {
               <Card
                 icon={<PaintBrush size={130} />}
                 title="Pintura"
-                text="Uso guache para criar pinturas coloridas e texturizadas, aplicando tinta opaca com pincéis e esponjas para obter efeitos especiais. Cada pintura em guache é resultado de um processo cuidadoso, combinando habilidade manual e criatividade para transmitir emoções"
+                text="Estudo pintura com guache para criar pinturas coloridas e texturizadas, aplicando tinta opaca com pincéis e esponjas para obter efeitos especiais. Cada pintura em guache é resultado de um processo cuidadoso, combinando habilidade manual e criatividade para transmitir emoções"
               />
             </S.Services>
           </Section>
@@ -107,13 +105,6 @@ export function Home() {
                 <img src={file?.src} alt={file?.alt} />
               </div>
             </S.PopUp>
-            {/* <Button
-              onClick={() => {
-                navigate("");
-              }}
-              variant="primary"
-              title="Ver mais"
-            /> */}
           </Section>
         </S.Container>
       </Container>

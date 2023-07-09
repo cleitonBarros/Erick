@@ -61,7 +61,7 @@ export function Footer() {
       </S.Contact>
       <S.Container>
         <S.Footer>
-          <a href="/">
+          <a href="#">
             <img src={Logo} alt="Logo" />
           </a>
           <div className="divider"></div>

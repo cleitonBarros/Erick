@@ -9,8 +9,6 @@ import { Hamburger } from "../Button/Hamburguer";
 import { SideBar } from "../SideBar";
 import * as S from "./style";
 
-import { CaretCircleLeft } from "@phosphor-icons/react";
-
 export const change = (sideBar: any, setSideBar: any, width: number) => {
   const chk: any = document?.getElementById("input-checkout");
   if (sideBar && width >= 1130) {
@@ -20,8 +18,6 @@ export const change = (sideBar: any, setSideBar: any, width: number) => {
 };
 
 export function Header() {
-  const path = window.location.pathname.split("/")[1];
-
   const UseContext = useContext(ThemeContext);
 
   const [width] = UseWindowSize();
@@ -30,34 +26,20 @@ export function Header() {
     <S.Pai>
       <S.Container>
         <S.Nav>
-          {path === "videos" ? (
-            <>
-              <a href="/">
-                <CaretCircleLeft className="voltar" color="#FB8351" size={48} />
-              </a>
-              <a href="#">
-                <img src={Logo} alt="imagem da logo" />
-              </a>
-            </>
-          ) : (
-            <>
-              <a href="#">
-                <img src={Logo} alt="imagem da logo" />
-              </a>
-              <ul>
-                <li>
-                  <a href="#Inicio">Inicio</a>
-                </li>
-                <li>
-                  <a href="#Service">Serviços</a>
-                </li>
-                <li>
-                  <a href="#Galeria">Galeria</a>
-                </li>
-              </ul>
-            </>
-          )}
-
+          <a href="#">
+            <img src={Logo} alt="imagem da logo" />
+          </a>
+          <ul>
+            <li>
+              <a href="#Inicio">Inicio</a>
+            </li>
+            <li>
+              <a href="#Service">Serviços</a>
+            </li>
+            <li>
+              <a href="#Galeria">Galeria</a>
+            </li>
+          </ul>
           <Hamburger onClick={UseContext?.showSideBar} />
           <Button href="#Contact" title="Entre em contato" variant="primary" />
         </S.Nav>
