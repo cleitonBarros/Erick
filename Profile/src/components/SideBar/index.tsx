@@ -2,7 +2,6 @@ import { useContext, useEffect } from "react";
 
 import { ThemeContext } from "../../context/useContext";
 import { UseWindowSize } from "../../hooks/useWidthSize";
-import { Button } from "../Button/Default";
 import * as S from "./style";
 
 interface propsSideBar {
@@ -47,14 +46,12 @@ export function SideBar({ className }: propsSideBar) {
             <li onClick={hadleClick}>
               <a href={path === "videos" ? "/" : "#Galeria"}>Galeria</a>
             </li>
+            <li onClick={hadleClick}>
+              <a href={path === "videos" ? "/" : "#Contact"}>
+                Entre em contato
+              </a>
+            </li>
           </ul>
-
-          <Button
-            onClick={hadleClick}
-            href="#Contact"
-            title="Entre em contato"
-            variant="primary"
-          />
         </S.Content>
       </S.Container>
     </>
