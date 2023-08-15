@@ -16,7 +16,7 @@ export function Footer() {
       <S.Contact id="Contact">
         <S.Content>
           <div className="wpp">
-            <h2>Me contate</h2>
+            <h2>Contate-me</h2>
             <p>
               Entre em contato comigo para fazer um orçamento ou para sanar
               algum duvida que apareceu
