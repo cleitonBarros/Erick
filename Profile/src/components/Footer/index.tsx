@@ -67,7 +67,7 @@ export function Footer() {
           <div className="divider"></div>
           <p>Copyright ©2023 Erick Alves - Todos os direitos reservados.</p>
           <span>
-            Feito por <img src={Flag} alt="bandiera lgbt" />
+            Feito por 🎨
             <a
               href="https://github.com/cleitonBarros"
               target="_blank"
